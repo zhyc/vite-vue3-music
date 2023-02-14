@@ -75,6 +75,9 @@ a:hover {
         &>a {
           display:block;
           padding: 0 $padding-20;
+          &>div{
+            display: inline-block;
+          }
         }
       }
       .active {
@@ -108,6 +111,7 @@ a:hover {
   .banner-image {
     max-width: 100%;
     height: auto;
+    border-radius: 20px;
   }
 }
 

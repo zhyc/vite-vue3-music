@@ -1,12 +1,13 @@
 <template>
     <div>
-        {{ msg }}
+        <h1>推荐</h1>
+        <Banner />
     </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
-const msg = ref('推荐')
+import Banner from './banner.vue'; 
 </script>
 
 <style scoped>

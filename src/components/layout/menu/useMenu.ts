@@ -1,4 +1,4 @@
-
+import {Music,Camera,Fm,VideoOne} from '@icon-park/vue-next'
 interface IMenu {
     name:string;
     key:string;
@@ -19,22 +19,22 @@ export function useMenu(){
                 {
                     name:'推荐',
                     key:'recommend',
-                    icon:'Camera'
+                    icon:Camera
                 },
                 {
                     name:'音乐馆',
                     key:'music',
-                    icon:'Music'
+                    icon:Music
                 },
                 {
                     name:'视频',
                     key:'video',
-                    icon:'VideoOne'
+                    icon:VideoOne
                 },
                 {
                     name:'电台',
                     key:'dj',
-                    icon:'Fm'
+                    icon:Fm
                 }
             ]
         },
