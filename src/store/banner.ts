@@ -4,13 +4,15 @@ import { Ibanner } from '@/models/banner'
 import { useBanner } from '@/utils/api'
 
 export const useBannerStore = defineStore('banner', () => {
-    const banners = ref<Ibanner[]>([])
+    const data = ref<Ibanner[]>([])
     const getBanners = async () => {
-        if (banners.value.length) return
-        banners.value = await useBanner() 
+        if (data.value.length) return
+        data.value = await useBanner() 
+
     }
+    
     return {
-        banners,
+        data,
         getBanners
     }
 })

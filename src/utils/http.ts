@@ -19,8 +19,7 @@ const http: Ihttp = {
         return new Promise((resolve, reject) =>{
             axios.get(url, {params})
             .then(res=>{
-                console.log(res.data.data)
-                resolve(res.data.data)
+                resolve(res.data)
             })
             .catch(err=>{
                 reject(err)
